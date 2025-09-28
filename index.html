@@ -1,201 +1,429 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+     
+    <meta charset="UTF-8" />
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
+    <title>CivicFix - SIH 2025 Project Presentation</title>
+        
+    <script src="https://cdn.tailwindcss.com"></script>
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CivicFix - SIH 2025 Project Presentation</title>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    /* Simple animation for modal */
-    .modal-fade-in {
-      animation: fadeIn 0.3s ease-out forwards;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-  </style>
-</head>
-
-<body class="bg-slate-50 text-slate-700">
-
-  <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 border-b border-slate-200">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-         <span class="material-symbols-outlined text-3xl text-blue-600">location_city</span>
-        <h1 class="text-2xl font-bold text-slate-800">
-          CivicFix <span class="font-medium text-blue-600">Presentation</span>
-        </h1>
-      </div>
-      <div class="bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full">
-        SIH 2025
-      </div>
-    </div>
-  </header>
-
-  <main class="container mx-auto px-4 py-8 md:py-12">
-    
-    <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 max-w-5xl mx-auto border border-slate-200">
-      
-      <div class="text-center mb-6">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">
-          Project Explanation Video
-        </h2>
-        <p class="text-slate-600 max-w-3xl mx-auto">
-          Welcome, esteemed evaluators. This video provides a comprehensive overview of our solution for the "Crowdsource Civic Issue Reporting and Resolution System" problem statement.
-        </p>
-      </div>
-
-      <div>
-        <div id="video-container-original" class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg border border-slate-200">
-          <iframe 
-            id="youtube-player"
-            class="w-full h-full" 
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=abcdef123456&enablejsapi=1" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="mt-4 flex flex-col sm:flex-row justify-center items-center gap-3">
-          <button id="enlarge-video-btn" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold transition-colors">
-            <span class="material-symbols-outlined">zoom_in_map</span>
-            Enlarge Video
-          </button>
-          <a id="youtube-link" href="https://youtu.be/AE39gJYuRog?si=7pguS6M3GHS5zP1Z" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-slate-200 hover:bg-slate-300 text-slate-800 px-5 py-2 rounded-lg font-semibold transition-colors">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19.802 5.344a3.045 3.045 0 00-2.147-2.164C15.63 2.5 12 2.5 12 2.5s-3.63 0-5.655.68c-.846.32-1.57.94-2.147 2.164C3.5 7.37 3.5 12 3.5 12s0 4.63.698 6.656a3.045 3.045 0 002.147 2.164C8.37 21.5 12 21.5 12 21.5s3.63 0 5.655-.68a3.045 3.045 0 002.147-2.164C20.5 16.63 20.5 12 20.5 12s0-4.63-.698-6.656zM9.75 15.125V8.875l5.25 3.125-5.25 3.125z" clip-rule="evenodd" /></svg>
-            Watch on YouTube
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="max-w-5xl mx-auto mt-12 text-center">
-      <h3 class="text-2xl font-bold text-slate-800 mb-6">
-        Project Resources
-      </h3>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <a href="#" target="_blank" class="block bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-500 hover:-translate-y-1 transition-all">
-          <span class="material-symbols-outlined text-4xl text-blue-600">laptop_chromebook</span>
-          <h4 class="font-bold text-slate-800 mt-2">Live Demo</h4>
-          <p class="text-sm text-slate-500">Interact with our live prototype.</p>
-        </a>
-        <a href="#" target="_blank" class="block bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-500 hover:-translate-y-1 transition-all">
-          <span class="material-symbols-outlined text-4xl text-blue-600">slideshow</span>
-          <h4 class="font-bold text-slate-800 mt-2">Presentation Deck</h4>
-          <p class="text-sm text-slate-500">View our detailed PPT.</p>
-        </a>
-        <a href="#" target="_blank" class="block bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-500 hover:-translate-y-1 transition-all">
-          <span class="material-symbols-outlined text-4xl text-blue-600">code</span>
-          <h4 class="font-bold text-slate-800 mt-2">GitHub Repository</h4>
-          <p class="text-sm text-slate-500">Browse the source code.</p>
-        </a>
-      </div>
-    </div>
-
-    <div class="max-w-6xl mx-auto mt-16">
-      <h3 class="text-2xl font-bold text-center text-slate-800 mb-8">
-        Meet The Team
-      </h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        
-        <div class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow">
-          <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200" src="https://api.dicebear.com/8.x/initials/svg?seed=Md Faijan" alt="Md Faijan">
-          <h4 class="text-lg font-bold text-slate-900">Md Faijan</h4>
-          <p class="text-blue-600 font-medium">Project Lead</p>
-        </div>
-
-        <div class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow">
-          <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200" src="https://api.dicebear.com/8.x/initials/svg?seed=Md Mustafa" alt="Md Mustafa">
-          <h4 class="text-lg font-bold text-slate-900">Md Mustafa</h4>
-          <p class="text-blue-600 font-medium">Backend Developer</p>
-        </div>
-
-        <div class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow">
-          <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200" src="https://api.dicebear.com/8.x/initials/svg?seed=Danish Ali" alt="Danish Ali">
-          <h4 class="text-lg font-bold text-slate-900">Danish Ali</h4>
-          <p class="text-blue-600 font-medium">Frontend Developer</p>
-        </div>
-
-        <div class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow">
-          <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200" src="https://api.dicebear.com/8.x/initials/svg?seed=Team Member" alt="Team Member 4">
-          <h4 class="text-lg font-bold text-slate-900">Team Member 4</h4>
-          <p class="text-blue-600 font-medium">UI/UX Designer</p>
-        </div>
-        
-      </div>
-    </div>
-
-  </main>
-
-  <footer class="mt-12 border-t border-slate-200">
-    <div class="container mx-auto px-4 py-6 text-center text-slate-500">
-      <p>&copy; 2025 CivicFix. A Smart India Hackathon Submission.</p>
-    </div>
-  </footer>
-
-  <div id="video-modal-backdrop" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[100] p-4">
-    <div class="bg-black w-full max-w-5xl rounded-lg shadow-2xl relative modal-fade-in">
-      <button id="close-modal-btn" class="absolute -top-2 -right-2 z-10 w-9 h-9 bg-white text-slate-800 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-red-500 hover:text-white transition-all">&times;</button>
-      <div id="video-modal-content" class="aspect-w-16 aspect-h-9"></div>
-    </div>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const videoModalBackdrop = document.getElementById('video-modal-backdrop');
-      const videoModalContent = document.getElementById('video-modal-content');
-      const originalVideoContainer = document.getElementById('video-container-original');
-      const videoIframe = document.getElementById('youtube-player');
-      const enlargeBtn = document.getElementById('enlarge-video-btn');
-      const closeBtn = document.getElementById('close-modal-btn');
-      const youtubeLink = document.getElementById('youtube-link');
-
-      const pauseVideo = () => {
-        videoIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-      };
-
-      const videoSrc = videoIframe.getAttribute('src');
-      const videoIdMatch = videoSrc.match(/embed\/([a-zA-Z0-9_-]+)/);
-      if (videoIdMatch && videoIdMatch[1]) {
-        const videoId = videoIdMatch[1];
-        youtubeLink.href = `https://youtu.be/AE39gJYuRog?si=7pguS6M3GHS5zP1Z`;
+     
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
       }
-      
-      enlargeBtn.addEventListener('click', () => {
-        videoModalContent.appendChild(videoIframe);
-        videoModalBackdrop.classList.remove('hidden');
-      });
 
-      const closeModal = () => {
-        pauseVideo();
-        originalVideoContainer.appendChild(videoIframe);
-        videoModalBackdrop.classList.add('hidden');
-      };
+      /* Simple animation for modal */
+      .modal-fade-in {
+        animation: fadeIn 0.3s ease-out forwards;
+      }
 
-      closeBtn.addEventListener('click', closeModal);
-      videoModalBackdrop.addEventListener('click', (event) => {
-        if (event.target === videoModalBackdrop) {
-          closeModal();
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
         }
-      });
-    });
-  </script>
 
-</body>
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-700">
+     
+    <header
+      class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 border-b border-slate-200"
+    >
+         
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+             
+        <div class="flex items-center gap-3">
+                   <span
+            class="material-symbols-outlined text-3xl text-blue-600"
+            >location_city</span
+          >
+                 
+          <h1 class="text-2xl font-bold text-slate-800">
+                      CivicFix
+            <span class="font-medium text-blue-600">Presentation</span>        
+          </h1>
+               
+        </div>
+             
+        <div
+          class="bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full"
+        >
+                  SIH 2025      
+        </div>
+           
+      </div>
+       
+    </header>
+
+     
+    <main class="container mx-auto px-4 py-8 md:py-12">
+              
+      <div
+        class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 max-w-5xl mx-auto border border-slate-200"
+      >
+                    
+        <div class="text-center mb-6">
+                 
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">
+                      Project Explanation Video        
+          </h2>
+                 
+          <p class="text-slate-600 max-w-3xl mx-auto">
+                      Welcome, esteemed evaluators. This video provides a
+            comprehensive overview of our solution for the "Crowdsource Civic
+            Issue Reporting and Resolution System" problem statement.        
+          </p>
+               
+        </div>
+
+             
+        <div>
+                 
+          <div
+            id="video-container-original"
+            class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg border border-slate-200"
+          >
+                     
+            <iframe
+              id="youtube-player"
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/Zgoq-mhoA5Y"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"
+            >
+                       
+            </iframe>
+                   
+          </div>
+
+                 
+          <div
+            class="mt-4 flex flex-col sm:flex-row justify-center items-center gap-3"
+          >
+                     
+            <button
+              id="enlarge-video-btn"
+              class="w-full sm:w-auto flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold transition-colors"
+            >
+                         
+              <span class="material-symbols-outlined">zoom_in_map</span>        
+                  Enlarge Video          
+            </button>
+                     
+            <a
+              id="youtube-link"
+              href="https://youtu.be/Zgoq-mhoA5Y?si=xLfmOC7UsX7BLGvq"
+              target="_blank"
+              class="w-full sm:w-auto flex items-center justify-center gap-2 bg-slate-200 hover:bg-slate-300 text-slate-800 px-5 py-2 rounded-lg font-semibold transition-colors"
+            >
+                         
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M19.802 5.344a3.045 3.045 0 00-2.147-2.164C15.63 2.5 12 2.5 12 2.5s-3.63 0-5.655.68c-.846.32-1.57.94-2.147 2.164C3.5 7.37 3.5 12 3.5 12s0 4.63.698 6.656a3.045 3.045 0 002.147 2.164C8.37 21.5 12 21.5 12 21.5s3.63 0 5.655-.68a3.045 3.045 0 002.147-2.164C20.5 16.63 20.5 12 20.5 12s0-4.63-.698-6.656zM9.75 15.125V8.875l5.25 3.125-5.25 3.125z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+                          Watch on YouTube          
+            </a>
+                   
+          </div>
+               
+        </div>
+           
+      </div>
+
+         
+      <div class="max-w-5xl mx-auto mt-12 text-center">
+             
+        <h3 class="text-2xl font-bold text-slate-800 mb-6">
+                  Project Resources      
+        </h3>
+             
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                 
+          <a
+            href="https://mdfaijan2003.github.io/Code4Cause-SIH2025/"
+            target="_blank"
+            class="block bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-500 hover:-translate-y-1 transition-all"
+          >
+                     
+            <span class="material-symbols-outlined text-4xl text-blue-600"
+              >laptop_chromebook</span
+            >
+                     
+            <h4 class="font-bold text-slate-800 mt-2">Live Demo</h4>
+                     
+            <p class="text-sm text-slate-500">
+              Interact with our live prototype.
+            </p>
+                   
+          </a>
+                 
+          <a
+            href="https://www.canva.com/design/DAGzFck8vVo/KQ9xHSWbkSsvzM0QlpHJiw/edit?utm_content=DAGzFck8vVo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            target="_blank"
+            class="block bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-500 hover:-translate-y-1 transition-all"
+          >
+                     
+            <span class="material-symbols-outlined text-4xl text-blue-600"
+              >slideshow</span
+            >
+                     
+            <h4 class="font-bold text-slate-800 mt-2">Presentation Deck</h4>
+                     
+            <p class="text-sm text-slate-500">View our detailed PPT.</p>
+                   
+          </a>
+                 
+          <a
+            href="#"
+            target="_blank"
+            class="block bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-500 hover:-translate-y-1 transition-all"
+          >
+                     
+            <span class="material-symbols-outlined text-4xl text-blue-600"
+              >code</span
+            >
+                     
+            <h4 class="font-bold text-slate-800 mt-2">GitHub Repository</h4>
+                     
+            <p class="text-sm text-slate-500">Browse the source code.</p>
+                   
+          </a>
+               
+        </div>
+           
+      </div>
+
+         
+      <div class="max-w-6xl mx-auto mt-16">
+             
+        <h3 class="text-2xl font-bold text-center text-slate-800 mb-8">
+                  Meet The Team      
+        </h3>
+             
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                          
+          <div
+            class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow"
+          >
+                     
+            <img
+              class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200"
+              src="https://api.dicebear.com/8.x/initials/svg?seed=Md Faijan"
+              alt="Md Faijan"
+            />
+                     
+            <h4 class="text-lg font-bold text-slate-900">Md Faijan</h4>
+                     
+            <p class="text-blue-600 font-medium">Project Tech Lead</p>
+                   
+          </div>
+                 
+          <div
+            class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow"
+          >
+                     
+            <img
+              class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200"
+              src="https://api.dicebear.com/8.x/initials/svg?seed=Md Faijan"
+              alt="Md Faijan"
+            />
+                     
+            <h4 class="text-lg font-bold text-slate-900">Kazim Ali</h4>
+                     
+            <p class="text-blue-600 font-medium">Project Lead</p>
+                   
+          </div>
+
+                 
+          <div
+            class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow"
+          >
+                     
+            <img
+              class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200"
+              src="https://api.dicebear.com/8.x/initials/svg?seed=Md Mustafa"
+              alt="Md Mustafa"
+            />
+                     
+            <h4 class="text-lg font-bold text-slate-900">Md Mustafa</h4>
+                     
+            <p class="text-blue-600 font-medium">Frontend Developer</p>
+                   
+          </div>
+
+                 
+          <div
+            class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow"
+          >
+                     
+            <img
+              class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200"
+              src="https://api.dicebear.com/8.x/initials/svg?seed=Danish Ali"
+              alt="Danish Ali"
+            />
+                     
+            <h4 class="text-lg font-bold text-slate-900">Danish Ali</h4>
+                     
+            <p class="text-blue-600 font-medium">Backend Developer  with AI</p>
+                   
+          </div>
+
+                 
+          <div
+            class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow"
+          >
+                     
+            <img
+              class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200"
+              src="https://api.dicebear.com/8.x/initials/svg?seed=Team Member"
+              alt="Team Member 4"
+            />
+                     
+            <h4 class="text-lg font-bold text-slate-900">Subhankar</h4>
+                     
+            <p class="text-blue-600 font-medium">Backend Developer</p>
+                   
+          </div>
+                 
+          <div
+            class="bg-white text-center p-6 rounded-lg border border-slate-200 shadow-sm hover:shadow-lg transition-shadow"
+          >
+                     
+            <img
+              class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-slate-200"
+              src="https://api.dicebear.com/8.x/initials/svg?seed=Team Member"
+              alt="Team Member 4"
+            />
+                     
+            <h4 class="text-lg font-bold text-slate-900">Swatika</h4>
+                     
+            <p class="text-blue-600 font-medium">Frontend Developer</p>
+                   
+          </div>
+               
+        </div>
+           
+      </div>
+
+       
+    </main>
+
+     
+    <footer class="mt-12 border-t border-slate-200">
+         
+      <div class="container mx-auto px-4 py-6 text-center text-slate-500">
+             
+        <p>&copy; 2025 CivicFix. A Smart India Hackathon Submission.</p>
+           
+      </div>
+       
+    </footer>
+
+     
+    <div
+      id="video-modal-backdrop"
+      class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm items-center justify-center z-[100] p-4"
+    >
+         
+      <div
+        class="bg-black w-full max-w-5xl rounded-lg shadow-2xl relative modal-fade-in"
+      >
+             
+        <button
+          id="close-modal-btn"
+          class="absolute -top-2 -right-2 z-10 w-9 h-9 bg-white text-slate-800 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-red-500 hover:text-white transition-all"
+        >
+          &times;
+        </button>
+             
+        <div id="video-modal-content" class="aspect-w-16 aspect-h-9"></div>
+             
+      </div>
+       
+    </div>
+
+     
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const videoModalBackdrop = document.getElementById(
+          "video-modal-backdrop"
+        );
+        const videoModalContent = document.getElementById(
+          "video-modal-content"
+        );
+        const originalVideoContainer = document.getElementById(
+          "video-container-original"
+        );
+        const videoIframe = document.getElementById("youtube-player");
+        const enlargeBtn = document.getElementById("enlarge-video-btn");
+        const closeBtn = document.getElementById("close-modal-btn");
+        const youtubeLink = document.getElementById("youtube-link");
+
+        const pauseVideo = () => {
+          // This command works with the 'https://www.youtube.com/embed/...' format
+          videoIframe.contentWindow.postMessage(
+            '{"event":"command","func":"pauseVideo","args":""}',
+            "*"
+          );
+        };
+
+        enlargeBtn.addEventListener("click", () => {
+          videoModalContent.appendChild(videoIframe);
+          videoModalBackdrop.classList.remove("hidden");
+          videoModalBackdrop.classList.add("flex");
+        });
+        const closeModal = () => {
+          pauseVideo();
+          originalVideoContainer.appendChild(videoIframe);
+          videoModalBackdrop.classList.add("hidden");
+          videoModalBackdrop.classList.remove("flex");
+        };
+
+        closeBtn.addEventListener("click", closeModal);
+        videoModalBackdrop.addEventListener("click", (event) => {
+          if (event.target === videoModalBackdrop) {
+            closeModal();
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
